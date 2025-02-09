@@ -45,20 +45,31 @@ nav {
 header {
     text-align: center;
     padding: 0;
-    margin: 0;
-    background: url('img/new-banner.jpg') no-repeat center center/cover;
+    background: url('images/bgphoto.jpg') no-repeat center center/cover;
+    color: black;
+}
+
+/* Hero Section */
+.banner {
+    text-align: center;
+    padding: 60px 20px;
+    background: url('images/bgphoto.jpg')no-repeat center center/cover;
     color: white;
 }
 
-
-
-.hero-content {
+.banner-content {
     background: rgba(0, 0, 0, 0.5);
-    padding: 30px;
-    margin:0;
+    padding: 20px;
     display: inline-block;
     border-radius: 10px;
 }
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    display: inline-block;
+    border-radius: 10px;
+}   
 
 /* Buttons */
 button {
@@ -97,8 +108,9 @@ button:hover {
 }
 
 .product img {
-    width: 100%;
-    height: auto;
+    width: 150px; /* Set a fixed width */
+    height: 150px; /* Set a fixed height */
+    object-fit: cover; /* Ensures the image covers the specified dimensions */
     border-radius: 5px;
 }
 
